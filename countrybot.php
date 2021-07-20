@@ -323,21 +323,4 @@ for ($x = 0; $x <= $max_count; $x++) {
     echo $c[$x].",".$frTrans.",".$deTrans.",".$esTrans."\n";
 }
 
-
-
-
-
-/* get the JSON data for that specific page
-$wikiAPIString = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&pageids=".$wikiID."&callback=&utf8=1&exsentences=5&exlimit=1";
-
-$secondGet = file_get_contents($wikiAPIString);
-$secondGet = substr($secondGet, 5);
-$secondGet = substr($secondGet, 0, -1);
-
-$secondSpew = json_decode($secondGet, true);
-
-$reduceArray = $secondSpew['query']['pages'][$wikiID];
-$bigBlock = $reduceArray['extract'];
-*/
-
 ?>
